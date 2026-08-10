@@ -1,162 +1,58 @@
 window.FORESHADOW = {
-  project: {
-    title: "FORESHADOW",
-    strapline: "Every change leaves a memory behind.",
-    format: "Feature film — development bible",
-    version: "0.1"
-  },
+  summary: "In 1979, ten-year-old Clark Apsley disappears after his friend Jay fails to meet him at the park. Decades later, Jay Cadell is still carrying the guilt. A school reunion brings Jay back together with Susy Whitlock and Adrian 'Ade' Laurier, and Ade reveals that Clark's disappearance may be connected to something much larger. Ade also introduces Jay to Pavahuasca, a plant infusion that sends them physically back into their ten-year-old selves in 1979, giving them a chance to investigate what happened to Clark before it happens.",
 
-  principles: [
-    {
-      title: "No premonitions",
-      status: "established",
-      text: "The story does not use conventional visions of the future or prophetic premonitions. Foreshadow should emerge from the mechanics, psychology and structure of altered timelines instead."
-    },
-    {
-      title: "The traveller remembers",
-      status: "established",
-      text: "A person who travels through time retains memory of the timeline they came from as well as the timeline they return to."
-    },
-    {
-      title: "Distance creates divergence",
-      status: "developing",
-      text: "The further back someone travels and changes something, the further the world they return to can drift from the life they remember."
-    },
-    {
-      title: "Memory accumulates",
-      status: "developing",
-      text: "Repeated changes may leave a traveller holding two, three or more incompatible versions of their life in the same mind."
-    }
+  beats: [
+    { title: "Clark disappears", text: "The screenplay opens in 1979. Jay is supposed to meet Clark at the park but is elsewhere with Susy. Clark vanishes, leaving behind his sixpence." },
+    { title: "Jay's present collapses", text: "Adult Jay works as a highly skilled prop maker. He quits after workplace bullying and conflict, then comes home to find Sally leaving him." },
+    { title: "The reunion", text: "Jay returns to Canningford for a school reunion, reconnecting with Susy and Ade and reopening the unresolved wound of Clark's disappearance." },
+    { title: "Ade's investigation", text: "Ade believes Clark was one of several children who disappeared around the same period and suspects connections involving Bartholomew, Clark's father and others." },
+    { title: "Pavahuasca", text: "Ade gives Jay a plant infusion called Pavahuasca. They are thrown back into their ten-year-old bodies in 1979." },
+    { title: "Back before the abduction", text: "Jay and Ade revisit Clark, observe people around him and begin trying to prevent the disappearance they remember." }
   ],
-
-  concept: {
-    logline: "A working logline has not yet been locked.",
-    core: "Time travel changes more than events. The traveller may become the only surviving witness to lives, relationships and histories that no longer exist.",
-    titleFunction: "The title Foreshadow should be structurally meaningful: the film can let traces of overwritten timelines appear to the traveller — and perhaps to the audience — before their significance is understood, without turning those traces into supernatural premonitions."
-  },
 
   characters: [
-    {
-      name: "Jay",
-      role: "Central character",
-      status: "developing",
-      notes: "Connected to the escalating development and use of the time-travel substance. Exact character arc remains to be locked."
-    },
-    {
-      name: "Ade",
-      role: "Central character",
-      status: "developing",
-      notes: "Works with Jay on making the original time-travel material increasingly potent. Exact motivations and consequences remain under development."
-    },
-    {
-      name: "The social worker",
-      role: "Opening / revised protagonist setup",
-      status: "developing",
-      notes: "Paul is rewriting the beginning around a social-worker role. The job is useful because it naturally places the character inside other people's unstable lives, fractured families and competing versions of truth before the film literalises those ideas through time travel."
-    }
+    { name: "Jay Cadell", role: "Central character", notes: "Early forties in the present. A precise, highly skilled movie-prop maker whose life is shaped by guilt over Clark's disappearance. The screenplay shows obsessive orderliness, workplace bullying, the end of his relationship with Sally and his return to Canningford." },
+    { name: "Adrian 'Ade' Laurier", role: "Jay's childhood friend", notes: "Former Royal Marine. At the reunion he appears thin, scruffy and isolated. He has been investigating Clark's disappearance and has previous experience using Pavahuasca to travel back into his younger self." },
+    { name: "Clark Apsley", role: "Missing childhood friend", notes: "The smaller dark-haired boy in the 1979 opening. He is talented at magic tricks and carries a sixpence he can roll across his fingers. His disappearance drives the story." },
+    { name: "Susy Whitlock", role: "Childhood friend", notes: "Uses a wheelchair, organises the school reunion and reconnects Jay and Ade. She is a former police intelligence officer who now runs a florist." },
+    { name: "Sally", role: "Jay's former partner", notes: "Leaves Jay at the beginning of the present-day story, telling him he needs help and that he has become difficult to reach." },
+    { name: "Bartholomew", role: "Figure in Ade's investigation", notes: "A former town councillor who is now a High Court judge. Ade suspects him of involvement in the events surrounding Clark's disappearance." }
   ],
 
-  mechanics: [
-    {
-      id: "source",
-      label: "01",
-      title: "The original material",
-      status: "developing",
-      text: "The original plant or ingredient may only permit a short jump through time. Its limits make the first experiences constrained rather than immediately all-powerful."
-    },
-    {
-      id: "refine",
-      label: "02",
-      title: "Refinement",
-      status: "developing",
-      text: "Jay and Ade discover ways to strengthen or refine it, allowing progressively greater temporal reach."
-    },
-    {
-      id: "change",
-      label: "03",
-      title: "Intervention",
-      status: "established",
-      text: "A traveller changes something in the past. The world continues from that altered point rather than simply snapping back to the traveller's original history."
-    },
-    {
-      id: "return",
-      label: "04",
-      title: "The return",
-      status: "developing",
-      text: "The traveller returns to a present that may differ from the one they left. Greater temporal distance can mean greater divergence."
-    },
-    {
-      id: "memory",
-      label: "05",
-      title: "Memory survives",
-      status: "established",
-      text: "The traveller remembers the previous timeline. Other people belong entirely to the new one."
-    },
-    {
-      id: "burden",
-      label: "06",
-      title: "The psychological cost",
-      status: "developing",
-      text: "Repeated travel can layer contradictory memories, making identity, guilt and attachment harder to separate from histories that technically never happened."
-    }
+  timeline: [
+    { label: "1979", title: "The missed meeting", text: "Jay tells Clark he will meet him later. Jay goes elsewhere with Susy. Clark waits alone and disappears." },
+    { label: "Present", title: "Jay's life fractures", text: "Jay quits his job after a disciplinary confrontation and ongoing bullying. Sally leaves him shortly afterwards." },
+    { label: "Present", title: "Return to Canningford", text: "The school reunion draws Jay back to the town, the brook, the school and the memories attached to Clark." },
+    { label: "Present", title: "Ade returns", text: "Ade appears outside the reunion and tells Jay and Susy that he believes Clark's disappearance is connected to other missing children and powerful local figures." },
+    { label: "Present → 1979", title: "First journey shown", text: "Jay and Ade drink Pavahuasca together and suddenly experience themselves as ten-year-old boys at the brook." },
+    { label: "1979", title: "Clark is still alive", text: "They visit Clark before his disappearance, see his home life and encounter Bartholomew and Armstrong arriving at the house." },
+    { label: "1979 → Present", title: "They slip back", text: "The younger Jay and Ade shudder and the adults return to the present, both retaining memory of what they just experienced." }
   ],
 
-  themes: [
-    ["Memory vs reality", "If you remember a life nobody else lived, was it still real?"],
-    ["Addiction to correction", "The ability to fix one mistake creates the temptation to fix another."],
-    ["Identity", "How much of a person survives when the history that made them changes?"],
-    ["Grief without a death", "A person can be alive in front of you while the version you loved has effectively vanished."],
-    ["Control", "Greater temporal power can create less certainty rather than more."],
-    ["Responsibility", "Changing the past makes the traveller responsible for consequences they could never fully predict."]
+  travel: [
+    { title: "The trigger", text: "The journey shown in the screenplay begins after Jay and Ade drink an infusion called Pavahuasca." },
+    { title: "Into younger selves", text: "They do not appear as adult visitors in 1979. They experience the past through their own ten-year-old bodies." },
+    { title: "Shared experience", text: "Jay initially assumes he is hallucinating; Ade argues that they cannot both be having the same hallucination." },
+    { title: "Physical effects", text: "Jay experiences rapid blinking, shallow breathing, visual distortion, nausea and vomiting. Ade says the sickness wears off after a few minutes." },
+    { title: "Return is automatic", text: "During the visit to Clark, Ade warns Jay that they will slip back to the present soon. They then return without a separate visible trigger." },
+    { title: "Memory remains", text: "Back in the present, Jay can recount details of what happened during the trip and questions whether it was real or a shared dream." }
   ],
 
-  influences: [
-    {
-      title: "Jacob's Ladder",
-      use: "Psychological instability, uncertain reality and a subjective experience the audience cannot immediately categorise."
-    },
-    {
-      title: "Vanilla Sky",
-      use: "Identity, memory, altered reality and emotional truth becoming more important than a cleanly explained surface reality."
-    },
-    {
-      title: "80s / 90s thriller DNA",
-      use: "A tactile, grounded genre-film sensibility: practical locations, ordinary people, dangerous ideas and mystery before exposition."
-    }
+  locations: [
+    ["The play park", "The place where Jay was meant to meet Clark in 1979 and where Clark's sixpence is left behind."],
+    ["The brook", "A major childhood place for Jay, Ade, Susy and Clark. It becomes the setting for the first time-travel sequence shown in the screenplay."],
+    ["Canningford School", "The site of the adult reunion where Jay reconnects with Susy and Ade."],
+    ["Clark's house", "Visited by Jay and Ade after travelling back. Bartholomew and Armstrong arrive while they are there."],
+    ["Jay's workshop", "A present-day movie-prop manufacturing workshop that establishes Jay's skill, precision and difficult working life."],
+    ["Jay's flat", "The site of Sally's departure, Jay's scrapbook of Clark material and several key present-day scenes."]
   ],
 
-  rewrite: [
-    {
-      title: "Social-worker opening",
-      status: "developing",
-      why: "It gives the opening a human-scale dramatic engine and places the protagonist around damaged relationships, unreliable accounts and consequences before time travel enters the story."
-    },
-    {
-      title: "Make Foreshadow part of the mechanism",
-      status: "developing",
-      why: "The title should describe how overwritten histories leave traces in memory or structure, not merely sound ominous."
-    },
-    {
-      title: "Avoid premonition mythology",
-      status: "established",
-      why: "Premonitions add a second supernatural rule-set and make the time-travel mechanics harder to read."
-    },
-    {
-      title: "Escalation through potency",
-      status: "developing",
-      why: "A weak original substance creates a natural dramatic ladder: short jumps first, stronger versions later, with increased temptation and psychological cost."
-    }
-  ],
-
-  questions: [
-    "What precisely causes the time jump?",
-    "What determines where and when the traveller returns?",
-    "Can more than one traveller remember overwritten timelines?",
-    "Do memories fade, coexist, or compete physically in the brain?",
-    "What is the first change that proves the rules to the audience?",
-    "What does Jay want badly enough to risk changing history?",
-    "What does Ade want, and when do their motives stop aligning?",
-    "At what point does refinement become dependency or addiction?",
-    "What final choice proves what the film believes about regret?"
+  objects: [
+    { title: "Clark's sixpence", text: "Found on the ground after Clark disappears. Adult Jay keeps a tarnished sixpence with his scrapbook of missing-child material." },
+    { title: "The scrapbook", text: "Jay keeps missing-child flyers and newspaper cuttings about Clark's 1979 disappearance hidden in a shoebox." },
+    { title: "Ade's camcorder", text: "Ade brings an old camcorder to the reunion and records Jay and Susy as they talk about their childhood memories." },
+    { title: "Pavahuasca", text: "The plant infusion Ade prepares and drinks with Jay immediately before the screenplay's first shown journey into 1979." },
+    { title: "The cigar tube", text: "During one trip, Jay recalls placing a cigar tube beneath the bridge, evidence that actions are being deliberately carried out in the past." },
+    { title: "Clark's magic", text: "Cards, tricks and sleight-of-hand establish Clark as unusually talented and give Jay and Ade a glimpse of the life he might have had." }
   ]
 };
