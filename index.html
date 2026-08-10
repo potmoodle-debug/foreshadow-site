@@ -13,7 +13,9 @@
     <header class="topbar">
       <a class="brand" href="#top">FORESHADOW</a>
       <nav class="nav" aria-label="Primary">
-        <a href="#story">Story</a>
+        <a href="#navigator">Navigator</a>
+        <a href="#threads">Threads</a>
+        <a href="#relationships">Relationships</a>
         <a href="#characters">Characters</a>
         <a href="#timeline">Timeline</a>
         <a href="#travel">Time Travel</a>
@@ -38,40 +40,87 @@
     </section>
 
     <main>
+      <section class="section" id="navigator">
+        <div class="section-head">
+          <div class="section-index">01 / NAVIGATOR</div>
+          <div>
+            <h2>Move through the screenplay.</h2>
+            <p class="section-intro">Search the story in order, or narrow it to present day, 1979, time travel or the investigation. The cards below follow the screenplay's story progression.</p>
+          </div>
+        </div>
+        <div class="navigator-tools">
+          <label class="search-box"><span>Search</span><input id="scene-search" type="search" placeholder="Clark, brook, Bartholomew, sixpence…" /></label>
+          <div class="filter-row" id="scene-filters" aria-label="Scene filters">
+            <button type="button" class="filter-btn active" data-scene-filter="all">All</button>
+            <button type="button" class="filter-btn" data-scene-filter="present">Present day</button>
+            <button type="button" class="filter-btn" data-scene-filter="1979">1979</button>
+            <button type="button" class="filter-btn" data-scene-filter="travel">Time travel</button>
+            <button type="button" class="filter-btn" data-scene-filter="investigation">Investigation</button>
+          </div>
+          <div class="result-count" id="scene-count"></div>
+        </div>
+        <div class="scene-list" id="scene-list"></div>
+      </section>
+
+      <section class="section" id="threads">
+        <div class="section-head">
+          <div class="section-index">02 / MYSTERY THREADS</div>
+          <div>
+            <h2>Follow one strand at a time.</h2>
+            <p class="section-intro">Choose a thread to pull together every relevant story beat, timeline event, person, clue and investigation entry already recorded from the screenplay.</p>
+          </div>
+        </div>
+        <div class="thread-buttons" id="thread-buttons"></div>
+        <div class="thread-intro" id="thread-intro"></div>
+        <div class="thread-results" id="thread-results"></div>
+      </section>
+
+      <section class="section" id="relationships">
+        <div class="section-head">
+          <div class="section-index">03 / RELATIONSHIPS</div>
+          <div>
+            <h2>Who connects to whom.</h2>
+            <p class="section-intro">Confirmed relationships are separated from links the screenplay has not yet explicitly identified.</p>
+          </div>
+        </div>
+        <div class="relationship-legend"><span class="rel-status confirmed">Confirmed</span><span class="rel-status unresolved">Unresolved</span></div>
+        <div class="relationship-list" id="relationship-list"></div>
+      </section>
+
       <section class="section" id="story">
-        <div class="section-head"><div class="section-index">01 / STORY</div><div><h2>The story on the page.</h2><p class="section-intro">A fuller beat-by-beat reference to the screenplay rather than a short synopsis.</p></div></div>
+        <div class="section-head"><div class="section-index">04 / STORY</div><div><h2>The story on the page.</h2><p class="section-intro">A fuller beat-by-beat reference to the screenplay rather than a short synopsis.</p></div></div>
         <div class="statement"><p class="big-copy" id="story-summary"></p></div>
         <div class="grid" id="beat-grid" style="margin-top:1rem"></div>
       </section>
 
       <section class="section" id="characters">
-        <div class="section-head"><div class="section-index">02 / CHARACTERS</div><div><h2>Major and supporting characters.</h2><p class="section-intro">Roles, histories and connections included only where the screenplay states or demonstrates them.</p></div></div>
+        <div class="section-head"><div class="section-index">05 / CHARACTERS</div><div><h2>Major and supporting characters.</h2><p class="section-intro">Roles, histories and connections included only where the screenplay states or demonstrates them.</p></div></div>
         <div class="grid" id="character-grid"></div>
       </section>
 
       <section class="section" id="timeline">
-        <div class="section-head"><div class="section-index">03 / TIMELINE</div><div><h2>Present day, memory and 1979.</h2><p class="section-intro">The screenplay repeatedly crosses between adult events, remembered childhood and physical returns to the past.</p></div></div>
+        <div class="section-head"><div class="section-index">06 / TIMELINE</div><div><h2>Present day, memory and 1979.</h2><p class="section-intro">The screenplay repeatedly crosses between adult events, remembered childhood and physical returns to the past.</p></div></div>
         <div class="timeline" id="timeline-list"></div>
       </section>
 
       <section class="section" id="travel">
-        <div class="section-head"><div class="section-index">04 / TIME TRAVEL</div><div><h2>What the screenplay establishes.</h2><p class="section-intro">Pavahuasca, the Hiding People, the bodily experience of travel and the rules discussed by Jay and Ade.</p></div></div>
+        <div class="section-head"><div class="section-index">07 / TIME TRAVEL</div><div><h2>What the screenplay establishes.</h2><p class="section-intro">Pavahuasca, the Hiding People, the bodily experience of travel and the rules discussed by Jay and Ade.</p></div></div>
         <div class="grid" id="travel-grid"></div>
       </section>
 
       <section class="section" id="investigation">
-        <div class="section-head"><div class="section-index">05 / INVESTIGATION</div><div><h2>Clark, Bartholomew and the people watching.</h2><p class="section-intro">The investigation grows from one missing child into historic abuse, police obstruction, surveillance and an organisation that has watched Jay and Ade for decades.</p></div></div>
+        <div class="section-head"><div class="section-index">08 / INVESTIGATION</div><div><h2>Clark, Bartholomew and the people watching.</h2><p class="section-intro">The investigation grows from one missing child into historic abuse, police obstruction, surveillance and an organisation that has watched Jay and Ade for decades.</p></div></div>
         <div class="grid" id="investigation-grid"></div>
         <div class="theme-list" id="network-list" style="margin-top:1rem"></div>
       </section>
 
       <section class="section" id="locations">
-        <div class="section-head"><div class="section-index">06 / LOCATIONS</div><div><h2>Places that matter.</h2><p class="section-intro">Canningford and the other locations where the mystery, childhood and surveillance threads intersect.</p></div></div>
+        <div class="section-head"><div class="section-index">09 / LOCATIONS</div><div><h2>Places that matter.</h2><p class="section-intro">Canningford and the other locations where the mystery, childhood and surveillance threads intersect.</p></div></div>
         <div class="theme-list" id="location-list"></div>
       </section>
 
       <section class="section" id="objects">
-        <div class="section-head"><div class="section-index">07 / OBJECTS & CLUES</div><div><h2>The physical trail.</h2><p class="section-intro">Coins, recordings, hidden writing, photographs, records and other objects the screenplay uses to move information between past and present.</p></div></div>
+        <div class="section-head"><div class="section-index">10 / OBJECTS & CLUES</div><div><h2>The physical trail.</h2><p class="section-intro">Coins, recordings, hidden writing, photographs, records and other objects the screenplay uses to move information between past and present.</p></div></div>
         <div class="grid" id="object-grid"></div>
       </section>
     </main>
@@ -79,6 +128,7 @@
     <footer><span>FORESHADOW · detailed screenplay reference</span><span>Source: Paul Marsh screenplay only</span></footer>
   </div>
   <script src="story-data.js"></script>
+  <script src="thread-data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
