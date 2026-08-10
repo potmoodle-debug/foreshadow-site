@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#090a0c" />
-  <meta name="description" content="Foreshadow — screenplay reference site based on Paul Marsh's script." />
+  <meta name="description" content="Foreshadow — detailed screenplay reference based only on Paul Marsh's script." />
   <title>Foreshadow — Screenplay Reference</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -17,8 +17,9 @@
         <a href="#characters">Characters</a>
         <a href="#timeline">Timeline</a>
         <a href="#travel">Time Travel</a>
+        <a href="#investigation">Investigation</a>
         <a href="#locations">Locations</a>
-        <a href="#objects">Objects</a>
+        <a href="#objects">Clues</a>
       </nav>
     </header>
 
@@ -26,50 +27,56 @@
       <div class="hero-inner">
         <div class="eyebrow">Written by Paul Marsh · screenplay reference</div>
         <h1>FORESHADOW<span class="ghost" aria-hidden="true">FORESHADOW</span></h1>
-        <p class="strapline">A childhood disappearance. A reunion. A way back.</p>
+        <p class="strapline">1979 never stopped happening.</p>
         <div class="hero-meta">
+          <span class="pill">89-page screenplay</span>
           <span class="pill">1979 / Present Day</span>
-          <span class="pill">Jay Cadell</span>
-          <span class="pill">Adrian Laurier</span>
-          <span class="pill">Clark Apsley</span>
+          <span class="pill">Canningford</span>
+          <span class="pill">Clark Apsley disappearance</span>
         </div>
       </div>
     </section>
 
     <main>
       <section class="section" id="story">
-        <div class="section-head"><div class="section-index">01 / STORY</div><div><h2>The screenplay as written.</h2><p class="section-intro">This site records only material present in the screenplay: events, people, places and stated rules.</p></div></div>
+        <div class="section-head"><div class="section-index">01 / STORY</div><div><h2>The story on the page.</h2><p class="section-intro">A fuller beat-by-beat reference to the screenplay rather than a short synopsis.</p></div></div>
         <div class="statement"><p class="big-copy" id="story-summary"></p></div>
         <div class="grid" id="beat-grid" style="margin-top:1rem"></div>
       </section>
 
       <section class="section" id="characters">
-        <div class="section-head"><div class="section-index">02 / CHARACTERS</div><div><h2>The people at the centre of it.</h2><p class="section-intro">Descriptions and relationships are taken directly from the screenplay.</p></div></div>
+        <div class="section-head"><div class="section-index">02 / CHARACTERS</div><div><h2>Major and supporting characters.</h2><p class="section-intro">Roles, histories and connections included only where the screenplay states or demonstrates them.</p></div></div>
         <div class="grid" id="character-grid"></div>
       </section>
 
       <section class="section" id="timeline">
-        <div class="section-head"><div class="section-index">03 / TIMELINE</div><div><h2>1979 and the present.</h2><p class="section-intro">The screenplay moves between Jay's childhood, his adult life and physical returns to 1979.</p></div></div>
+        <div class="section-head"><div class="section-index">03 / TIMELINE</div><div><h2>Present day, memory and 1979.</h2><p class="section-intro">The screenplay repeatedly crosses between adult events, remembered childhood and physical returns to the past.</p></div></div>
         <div class="timeline" id="timeline-list"></div>
       </section>
 
       <section class="section" id="travel">
-        <div class="section-head"><div class="section-index">04 / TIME TRAVEL</div><div><h2>What the script explicitly establishes.</h2><p class="section-intro">No extra rules are added here. These are only the mechanics demonstrated or stated by characters in the screenplay.</p></div></div>
+        <div class="section-head"><div class="section-index">04 / TIME TRAVEL</div><div><h2>What the screenplay establishes.</h2><p class="section-intro">Pavahuasca, the Hiding People, the bodily experience of travel and the rules discussed by Jay and Ade.</p></div></div>
         <div class="grid" id="travel-grid"></div>
       </section>
 
+      <section class="section" id="investigation">
+        <div class="section-head"><div class="section-index">05 / INVESTIGATION</div><div><h2>Clark, Bartholomew and the people watching.</h2><p class="section-intro">The investigation grows from one missing child into historic abuse, police obstruction, surveillance and an organisation that has watched Jay and Ade for decades.</p></div></div>
+        <div class="grid" id="investigation-grid"></div>
+        <div class="theme-list" id="network-list" style="margin-top:1rem"></div>
+      </section>
+
       <section class="section" id="locations">
-        <div class="section-head"><div class="section-index">05 / LOCATIONS</div><div><h2>The world of Canningford.</h2><p class="section-intro">Recurring places that carry the story across childhood and adulthood.</p></div></div>
+        <div class="section-head"><div class="section-index">06 / LOCATIONS</div><div><h2>Places that matter.</h2><p class="section-intro">Canningford and the other locations where the mystery, childhood and surveillance threads intersect.</p></div></div>
         <div class="theme-list" id="location-list"></div>
       </section>
 
       <section class="section" id="objects">
-        <div class="section-head"><div class="section-index">06 / OBJECTS & CLUES</div><div><h2>Things the screenplay keeps returning to.</h2><p class="section-intro">Physical objects and evidence that connect Jay's present to Clark's disappearance and the trips into 1979.</p></div></div>
+        <div class="section-head"><div class="section-index">07 / OBJECTS & CLUES</div><div><h2>The physical trail.</h2><p class="section-intro">Coins, recordings, hidden writing, photographs, records and other objects the screenplay uses to move information between past and present.</p></div></div>
         <div class="grid" id="object-grid"></div>
       </section>
     </main>
 
-    <footer><span>FORESHADOW · screenplay reference</span><span>Source: Paul Marsh screenplay</span></footer>
+    <footer><span>FORESHADOW · detailed screenplay reference</span><span>Source: Paul Marsh screenplay only</span></footer>
   </div>
   <script src="story-data.js"></script>
   <script src="app.js"></script>
