@@ -1,9 +1,8 @@
 // Foreshadow collaboration storage configuration.
-// The site works immediately in local browser mode.
-// To enable shared online saving, set storage to "supabase" and add the
-// project URL + anon key after the Supabase table/RLS policies are created.
+// This contains only a public browser-safe Supabase publishable key.
+// Database access is controlled by Row Level Security policies in Supabase.
 window.FORESHADOW_COLLAB_CONFIG = {
-  storage: "local",
-  supabaseUrl: "",
-  supabaseAnonKey: ""
+  storage: "supabase",
+  supabaseUrl: "https://nahpmtmfhudzmdufaghy.supabase.co",
+  supabaseAnonKey: "sb_publishable_uYH5TR3evzq5noejYlQTjA_1MYEPWAV"
 };
