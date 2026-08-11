@@ -20,16 +20,8 @@
     ['UV coordinates / 2012','A hidden message sends Jay and Ade toward Alang.','Introduces another mystery strand; this view tracks where its answer appears for the audience.']
   ];
   host.innerHTML=`
-    <div class="dev-modebar"><button id="paul-mode" type="button">Paul response view</button><span>Shows feedback still awaiting Paul, plus points where he has recorded a script decision.</span></div>
     <div class="dev-grid">
       <section class="dev-panel"><span class="dev-kicker">TIME TRAVEL CAUSE → EFFECT</span><h3>What does each journey appear to do?</h3><div>${effect.map(x=>`<article class="effect-row"><strong>${x.title}</strong><p>${x.action}</p><div class="effect-arrow">↓</div><p class="effect-result">${x.consequence}</p></article>`).join('')}</div></section>
       <section class="dev-panel"><span class="dev-kicker">FORESHADOWING TRACKER</span><h3>Setup → meaning → payoff</h3><div>${setups.map(x=>`<article class="setup-row"><strong>${x[0]}</strong><p><b>Setup:</b> ${x[1]}</p><p><b>Payoff / reader question:</b> ${x[2]}</p></article>`).join('')}</div></section>
     </div>`;
-  document.getElementById('paul-mode')?.addEventListener('click',()=>{
-    document.body.classList.toggle('paul-mode');
-    const on=document.body.classList.contains('paul-mode');
-    document.getElementById('paul-mode').textContent=on?'Exit Paul response view':'Paul response view';
-    document.getElementById('collaboration')?.scrollIntoView({behavior:'smooth'});
-    window.dispatchEvent(new CustomEvent('foreshadow-paul-mode',{detail:{on}}));
-  });
 })();
