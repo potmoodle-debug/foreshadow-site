@@ -7,6 +7,7 @@
   <meta name="description" content="Foreshadow — detailed screenplay reference based only on Paul Marsh's script." />
   <title>Foreshadow — Screenplay Reference</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="collab.css" />
 </head>
 <body>
   <div class="site-shell">
@@ -22,6 +23,7 @@
         <a href="#investigation">Investigation</a>
         <a href="#locations">Locations</a>
         <a href="#objects">Clues</a>
+        <a href="#collaboration">Notes</a>
       </nav>
     </header>
 
@@ -123,12 +125,57 @@
         <div class="section-head"><div class="section-index">10 / OBJECTS & CLUES</div><div><h2>The physical trail.</h2><p class="section-intro">Coins, recordings, hidden writing, photographs, records and other objects the screenplay uses to move information between past and present.</p></div></div>
         <div class="grid" id="object-grid"></div>
       </section>
+
+      <section class="section" id="collaboration">
+        <div class="section-head">
+          <div class="section-index">11 / NOTES & SUGGESTIONS</div>
+          <div>
+            <h2>A separate place to question the story.</h2>
+            <p class="section-intro"><strong>This section is not Paul’s screenplay.</strong> It is a working area for questions, suggestions and rewrite discussion. Paul can respond beneath each note and mark what happens to it.</p>
+          </div>
+        </div>
+
+        <div class="collab-toolbar">
+          <span id="collab-storage-badge" class="collab-storage-badge local">Saved on this browser</span>
+          <span class="collab-storage-note">Shared online saving can be switched on once the database connection is added.</span>
+        </div>
+
+        <div class="collab-list" id="collab-notes"></div>
+
+        <div class="collab-add">
+          <h3>Add another Foreshadow note</h3>
+          <p>Use this for a question, possible issue, suggestion or rewrite idea. It remains separate from the screenplay reference above.</p>
+          <form class="collab-add-form" id="collab-add-form">
+            <label>Type
+              <select name="category">
+                <option>Suggestion</option>
+                <option>Story clarity</option>
+                <option>Plot question</option>
+                <option>Continuity question</option>
+                <option>Character</option>
+                <option>Time travel</option>
+                <option>Possible cut</option>
+                <option>Rewrite idea</option>
+              </select>
+            </label>
+            <label>Heading
+              <input name="title" required placeholder="What is the question or idea?" />
+            </label>
+            <label>Note
+              <textarea name="note" required placeholder="Explain the issue or suggestion…"></textarea>
+            </label>
+            <button type="submit">Add note</button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer><span>FORESHADOW · detailed screenplay reference</span><span>Source: Paul Marsh screenplay only</span></footer>
+    <footer><span>FORESHADOW · detailed screenplay reference</span><span>Screenplay reference source: Paul Marsh screenplay · Notes section kept separate</span></footer>
   </div>
   <script src="story-data.js"></script>
   <script src="thread-data.js"></script>
   <script src="app.js"></script>
+  <script src="collab-config.js"></script>
+  <script src="collab.js"></script>
 </body>
 </html>
