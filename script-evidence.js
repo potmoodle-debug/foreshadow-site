@@ -30,19 +30,10 @@
         { label: 'SHADES — LATER', text: '“We watched Laurier kick the shit out of several adults when he was a week shy of his eleventh birthday. You were both there. We watch you closely after that and you make no mention of it for nearly thirty years. Not once! Then suddenly, now, you’re talking about nothing else.”' }
       ],
       reading: 'The camcorder scene gives the audience a tangible mismatch between recorded history and Jay’s current memory. Shades later identifies another discontinuity. Paul’s response about the Mandela effect and reality “shuffling” events explains the rule behind what the script is already showing.'
-    },
-    'clark-shades': {
-      title: 'What the screenplay actually says',
-      note: 'This is how Shades is presented in the current draft.',
-      quotes: [
-        { label: 'SCENE DIRECTION', text: '“Jay sits opposite ‘Shades’ across a small table in a small interview room.”' },
-        { label: 'SHADES', text: '“You’re not detained. We just want to ask you some questions about Bartholomew. Our organisation has been watching you two for thirty years.”' }
-      ],
-      reading: 'The current screenplay introduces Shades as a present-day member of a watching organisation. It does not state on the page that Shades is Clark. This feedback item should therefore be treated as an identity question rather than a confirmed reveal.'
     }
   };
 
-  const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[ch]));
 
   function decorate(){
     document.querySelectorAll('.collab-card[data-id]').forEach(card => {
